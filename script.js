@@ -4,11 +4,6 @@ function showAlert() {
 
 const form = document.getElementById('myForm');
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  validateForm();
-});
-
 function validateEmail(email) {
     const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]{2,7}$/
     return regex.test(email) 
@@ -24,6 +19,13 @@ function validateForm() {
       alert('Correo electrónico enviado correctamente.');
     }
 } 
+
+if (form) {
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    validateForm();
+  })
+}
 
 document.querySelector("button.button-menu-toggle")
     .addEventListener("click", function() {
