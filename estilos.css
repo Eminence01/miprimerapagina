@@ -117,9 +117,25 @@ a {
       font-size: 40px;
     }
 }
+
 .img-container {
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.video-container {
+    padding: 10px;
+    gap: 5px;
+}
+
+iframe, video {
+    max-width: 90%;
+}
+
+footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 200px;
 }
