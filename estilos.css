@@ -120,7 +120,8 @@ a {
 
 .img-container {
     flex-direction: column;
-    max-width: 90%;
+    max-width: 99%;
+    max-height: 99%
 }
 
 .video-container {
