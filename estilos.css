@@ -122,8 +122,11 @@ a {
     padding: 10px;
     height: 50px;
     flex-direction: column;
+}
+
+.img {
     max-width: 99%;
-    max-height: 99%
+    max-height: 99%;
 }
 
 .video-container {
